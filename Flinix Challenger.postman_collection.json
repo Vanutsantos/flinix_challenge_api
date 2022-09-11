@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "423d08dd-be15-49a9-b89a-6144f26ee22a",
+		"name": "Flinix Challenger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8029475"
+	},
+	"item": [
+		{
+			"name": "List Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/doctors"
+			},
+			"response": []
+		},
+		{
+			"name": "Createe Doctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Doctor 2\",\r\n    \"crm\": \"######\",\r\n    \"user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/doctors"
+			},
+			"response": []
+		},
+		{
+			"name": "Createe Doctor Productivity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"service_at\":  \"2022-09-11 15:59:44.336393\",\r\n   \"value\": 1,\r\n   \"description\" : \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/doctors/1/productivities"
+			},
+			"response": []
+		}
+	]
+}
