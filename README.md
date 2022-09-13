@@ -9,11 +9,11 @@ Requerido
   postgresql
 
 Definir variáveis de ambiente (.env)<br />
-  *DB_HOST<br />
-  *DB_PORT<br />
-  *DB_USER<br />
-  *DB_PASS<br />
-  *DB_NAME<br />
+  DB_HOST<br />
+  DB_PORT<br />
+  DB_USER<br />
+  DB_PASS<br />
+  DB_NAME<br />
 
 Inicializar o projeto
   -yarn install
