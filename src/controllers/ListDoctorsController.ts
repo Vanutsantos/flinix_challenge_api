@@ -9,7 +9,7 @@ export class ListDoctorsController {
       return res.status(200).json(data.rows)
     } catch (error) {
       console.error(error)
-      return res.status(500).json({message: 'Erro no servidor'})
+      return res.status(500).json({message: 'Internal Server Error'})
     }
   }
 }
