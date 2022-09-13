@@ -4,24 +4,26 @@ Projeto desenvolvido com Node.js, com express e typeorm (para criação do banco
 
 Foi usado Yarn para o gerenciamento de pacotes
 
-Requerido
-  node.js
-  postgresql
+## Requerido
 
-Definir variáveis de ambiente (.env)<br />
-  DB_HOST<br />
-  DB_PORT<br />
-  DB_USER<br />
-  DB_PASS<br />
-  DB_NAME<br />
+  * node.js 
+  * postgresql
+## Definir variáveis de ambiente (.env)
+```
+  DB_HOST
+  DB_PORT
+  DB_USER
+  DB_PASS
+  DB_NAME
+```
+## Inicializar o projeto
 
-Inicializar o projeto
-  -yarn install
-  -yarn migration:generate (Criar as migrations)
-  -yarn migration:run (Criar as tabelas)
-  -yarn dev (Inicializar o projeto)
-
-Endpoints
+  * yarn install
+  * yarn migration:generate (Criar as migrations)
+  * yarn migration:run (Criar as tabelas)
+  * yarn dev (Inicializar o projeto)
+## Endpoints
+```
   GET /doctors
   
   POST /doctors
@@ -37,3 +39,5 @@ Endpoints
     "value": {{productivity value}},
     "description" : "productivity description"
   }
+```
+  
