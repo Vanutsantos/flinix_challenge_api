@@ -9,7 +9,7 @@ Requerido
   postgresql
 
 Definir variáveis de ambiente (.env)__
-  DB_HOST__
+  DB_HOST<br />
   DB_PORT__
   DB_USER__
   DB_PASS__
