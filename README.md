@@ -8,12 +8,12 @@ Requerido
   node.js
   postgresql
 
-Definir variáveis de ambiente (.env)__
+Definir variáveis de ambiente (.env)<br />
   DB_HOST<br />
-  DB_PORT__
-  DB_USER__
-  DB_PASS__
-  DB_NAME__
+  DB_PORT<br />
+  DB_USER<br />
+  DB_PASS<br />
+  DB_NAME<br />
 
 Inicializar o projeto
   -yarn install
