@@ -15,6 +15,7 @@ export class User {
   @Column({
     type: 'varchar',
     length: 255,
+    nullable: true
   })
   email: string
 

@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { User } from "./Users";
 
 @Entity('doctors')
@@ -9,16 +9,20 @@ export class Doctor {
   @Column({
     type: 'varchar',
     length: 45,
+    nullable: true
   })
   name: string 
     
   @Column({
     type: 'varchar',
     length: 45,
+    nullable: true
   })
   crm: string
 
-  
-  @Column({type: 'int'})
-  created_by: User
+  @ManyToOne(() => User, (users) => users.id, {
+    nullable: true
+  })
+  @JoinColumn({name: 'created_by_id'})
+  created_by_id: User
 }
