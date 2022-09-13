@@ -22,6 +22,7 @@ Foi usado Yarn para o gerenciamento de pacotes
   * yarn migration:generate (Criar as migrations)
   * yarn migration:run (Criar as tabelas)
   * yarn dev (Inicializar o projeto)
+  * Adicione uma linha na tabela de usuários (users)
 ## Endpoints
 ```
   GET /doctors
